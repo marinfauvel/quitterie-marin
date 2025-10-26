@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Quitterie & Marin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Quitterie &amp; Marin</div>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="prestations.html">Prestations</a>
+      <a href="repertoire.html">Répertoire</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle-5" aria-label="Ouvrir le menu">☰</button>
+  </header>
+
+  <main>
+    <section class="content fade-in">
+      <h2>Contact</h2>
+      <p>Pour un devis ou pour réserver, envoyez-nous un message via le formulaire ci-dessous.</p>
+
+      <!-- Formulaire neutre : remplacez action="#" par l'URL Formspree ou EmailJS lorsque prêt -->
+      <form id="contact-form" action="#" method="POST" novalidate>
+        <label for="name">Nom</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="event">Type d'événement</label>
+        <input id="event" name="event" type="text" placeholder="Mariage, cocktail, soirée...">
+
+        <label for="date">Date (si connue)</label>
+        <input id="date" name="date" type="date">
+
+        <label for="message">Message / détails</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <p class="small">Remarque : le formulaire est neutre ; remplacez l'attribut <code>action</code> par l'URL Formspree ou le script de votre choix pour activer l'envoi.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Quitterie &amp; Marin</p>
+  </footer>
+</body>
+</html>
